@@ -1,7 +1,0 @@
-[book]
-title = "Dimension Delvers Internal Documentation"
-
-[output.html]
-git-repository-url = "https://github.com/Dimension-Delvers/dimension-delvers-docs"
-git-repository-icon = "fa-github"
-edit-url-template = "https://github.com/Dimension-Delvers/dimension-delvers-docs/edit/main/{path}"

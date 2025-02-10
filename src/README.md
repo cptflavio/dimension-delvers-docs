@@ -48,9 +48,9 @@ To make your page accessible from the book’s navigation:
   - `1. Item` (ordered)
 - **Code Blocks**:
   ```
-  ```language
+  \`\`\`language
   Code here
-  ```
+  \`\`\`
   ```
 
 If you have any questions, feel free to ask in the Discord server

@@ -5,7 +5,7 @@ This is the new place for hopefully keeping all the docs regarding DD together i
 ## How to Create Pages
 
 ### 1. Get Access to the Repository
-To add or edit pages in the mdBook, you need to be a member of the DD GitHub organization. If you haven't received an invite to the GitHub organization yet, please ask one of the organization Owners to invite
+To add or edit pages in the mdBook, you need to be a member of the DD GitHub organization. If you haven't received an invite to the GitHub organization yet, please ask one of the organization Owners to invite you.
 
 ### 2. Navigate to the Repository
 1. Open the GitHub repository by clicking this link: [https://github.com/Dimension-Delvers/dimension-delvers-docs/](https://github.com/Dimension-Delvers/dimension-delvers-docs/)

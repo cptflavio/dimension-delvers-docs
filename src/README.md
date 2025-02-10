@@ -34,7 +34,7 @@ To make your page accessible from the book’s navigation:
 3. Save your changes.
 
 ### 7. Commit Your Changes
-1. Scroll to the bottom of the page.
+1. Press the green button in the top right of the page that says "Commit changes..."
 2. Add a short commit message (e.g., `Added new_page.md`).
 3. Click `Commit changes`.
 

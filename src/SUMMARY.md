@@ -1,6 +1,6 @@
 # Summary
 
-[Introduction](README.md)
+[Introduction](src/README.md)
 
 - [Example Page](example.md)
 - [Nested example](nested/README.md)

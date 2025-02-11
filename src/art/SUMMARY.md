@@ -1,4 +1,4 @@
 
-[Introduction](src/art/README.md)
+[Introduction](README.md)
 
-- [Style Guide](src/art/style%20guide/README.md)
+- [Style Guide](style%20guide/README.md)

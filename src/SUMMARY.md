@@ -4,6 +4,7 @@
 
 - [Mod(Pack) Design](design/DesignDocHome.md)
 - [Code](code/README.md)
+    - [Gear Sockets](code/design/gear-sockets.md)
 - [Art](art/README.md)
     - [Style Guide](art/style-guide/README.md)
     - [Technologies](art/technologies/README.md)

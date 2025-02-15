@@ -11,3 +11,5 @@
 - [Builds](builds/README.md)
     - [Standards](builds/standards.md)
     - [Processors](builds/processors.md)
+- Meeting Notes
+    - [Feb-15-2025 Community Meeting](meetings/2025-Feb-Notes.md)          

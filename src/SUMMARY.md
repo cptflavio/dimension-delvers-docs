@@ -12,4 +12,4 @@
     - [Standards](builds/standards.md)
     - [Processors](builds/processors.md)
 - [Meeting Notes](meetings/README.md)
-    - [Feb-15-2025 Community Meeting](meetings/2025-Feb-Notes.md)          
+    - [Feb-15-2025 Community Meeting](meetings/2025-Feb-15-Notes.md)          

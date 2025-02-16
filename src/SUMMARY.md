@@ -5,6 +5,7 @@
 - [Mod(Pack) Design](design/DesignDocHome.md)
 - [Code](code/README.md)
     - [Datapack Formats](code/datapack/datapack-formats.md) 
+    - [Modifier Datapack Format](code/datapack/modifiers.md) 
 - [Art]()
     - [Style Guide](art/style-guide/README.md)
     - [Technologies](art/technologies/README.md)

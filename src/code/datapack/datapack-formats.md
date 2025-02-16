@@ -12,4 +12,4 @@ The namespace in a datapack works a bit like your mod name. Mods have their own 
 Dimension Delvers' namespace is dimensiondelvers. In this namespace we have added some basic examples that can guide you to create some new unique variations.
 
 ## Datapack Format List
-- [Modifiers](code/datapack/modifiers.md)
+- [Modifiers](modifiers.md)

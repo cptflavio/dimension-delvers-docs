@@ -247,6 +247,54 @@ The namespace in a datapack works a bit like your mod name. Mods have their own 
 <ul>
 <li><a href="code/datapack/code/datapack/modifiers.html">Modifiers</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="modifiers"><a class="header" href="#modifiers">Modifiers</a></h1>
+<h2 id="modifier-files"><a class="header" href="#modifier-files">Modifier Files</a></h2>
+<p>Modifiers are the core of the Dimension Delvers upgrade system.</p>
+<h3 id="format"><a class="header" href="#format">Format</a></h3>
+<ul>
+<li><code>modifiers</code> : A list of modifier effects that will be applied to the entity by this modifier.</li>
+</ul>
+<h3 id="usage"><a class="header" href="#usage">Usage</a></h3>
+<p>You select one or more from the modifier effects described below and add it in the <code>modifiers</code> list.</p>
+<h3 id="example"><a class="header" href="#example">Example</a></h3>
+<pre><code class="language-json">{
+  "modifiers": [
+    {
+      "type": "dimensiondelvers:attribute_modifier",
+      "id": "minecraft:flat_attack_damage",
+      "attribute": "minecraft:attack_damage",
+      "min_roll": 1,
+      "max_roll": 3,
+      "operation": "add_value"
+    }
+  ]
+}
+</code></pre>
+<h3 id="note-on-rolls"><a class="header" href="#note-on-rolls">Note on rolls</a></h3>
+<p>A <code>roll</code> is used to calculate the correct value of a modifier effect. This roll is a number between 0 and 1. It uses the <code>roll</code> value determined by the modifierInstane owner of the modifier.</p>
+<p>The final calculation is usually something like: <code>min_roll + ((max_roll - min_roll) * roll)</code></p>
+<h2 id="attributemodifiereffect"><a class="header" href="#attributemodifiereffect">AttributeModifierEffect</a></h2>
+<h3 id="format-1"><a class="header" href="#format-1">Format</a></h3>
+<ul>
+<li><code>type</code>: <code>"dimensiondelvers:attribute"</code></li>
+<li><code>id</code>: The id is used to uniquely identify this attribute modifier efect in the list of modifier effects for this modifier. This is necessary to identify the correct attributes to remove when the item is removed.</li>
+<li><code>attribute</code>: The attribute adjusted by this effect.</li>
+<li><code>min_roll</code>: The minimum value that can be rolled for this effect.</li>
+<li><code>max_roll</code>: The maximum value that can be rolled for this effect.</li>
+<li><code>operation</code>: The operation to perform on the attribute. Can be <code>add_value</code>, <code>add_multiplied_base</code>, <code>add_multiplied_total</code>. See vanilla AttributeModifier for more information.</li>
+</ul>
+<h3 id="usage-1"><a class="header" href="#usage-1">Usage</a></h3>
+<p>Each effect will add a random value between <code>min_roll</code> and <code>max_roll</code> to the <code>attribute</code> of the entity. The <code>operation</code> will determine how the value is added.</p>
+<h3 id="example-1"><a class="header" href="#example-1">Example</a></h3>
+<pre><code class="language-json">{
+  "type": "dimensiondelvers:attribute_modifier",
+  "id": "minecraft:flat_attack_damage",
+  "attribute": "minecraft:attack_damage",
+  "min_roll": 1,
+  "max_roll": 3,
+  "operation": "add_value"
+}
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="software-and-technologies"><a class="header" href="#software-and-technologies">Software and Technologies</a></h1>
 <p>All the software we all should be using</p>
 <div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><object data="../other-files/meeting-notes/2025-02-15-DD-Weekly-Update.pdf" type="application/pdf" width="700px" height="700px">

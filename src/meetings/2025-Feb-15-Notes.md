@@ -61,3 +61,7 @@ Name Poll - React to names in name list so we can determine the top 10 for a pol
 ## == Next meeting ==
 
 Next week, Saturday, February 22, 2025 at 8:00 PM UTC
+
+## == Give us feedback ==
+Please let the project managers know how this meeting went and give us some feedback.
+https://forms.gle/VhzLPqU2oA71C19w8

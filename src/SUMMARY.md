@@ -11,6 +11,7 @@
     - [Technologies](art/technologies/README.md)
 - [Builds]()
     - [Standards](builds/standards.md)
-    - [Processors](builds/processors.md) 
+    - [Processors](builds/processors.md)
+- [Glossary](glossary.md)
 - [Meeting Notes]()
     - [Feb-15-2025 Community Meeting](meetings/2025-Feb-15-Notes.md)          

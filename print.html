@@ -314,7 +314,50 @@ The namespace in a datapack works a bit like your mod name. Mods have their own 
 </div>
 <p>Use these when making builds, so the processors can easily target them.
 <img src="builds//src/builds/processor_blocks.png" alt="processor_blocks" /></p>
-<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><object data="../other-files/meeting-notes/2025-02-15-DD-Weekly-Update.pdf" type="application/pdf" width="700px" height="700px">
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="glossary"><a class="header" href="#glossary">Glossary</a></h1>
+<h2 id="mod-1"><a class="header" href="#mod-1">Mod</a></h2>
+<ul>
+<li><strong>Dimension Delvers</strong>: Current project working name. Not final.</li>
+<li><strong>Rift</strong>: Current working name for the randomly generated dungeons that the player will enter.</li>
+<li><strong>Rift Key</strong>: Current working name for the item that can open a portal to a rift.</li>
+<li><strong>Theme</strong>: The visuals and general content that is applied to a rift. Utilizes processors.</li>
+</ul>
+<h2 id="features"><a class="header" href="#features">Features</a></h2>
+<ul>
+<li><strong>Gear Sockets <em>(PoC)</em></strong>: The current working system to manage the modifiers on our weapons and armor.</li>
+<li><strong>Modifier <em>(Feature)</em></strong>: Any powerup applied to a player or to something else, will be implemented using the modifier system. This system is comparable to enchantments, but much more advanced and under our control.</li>
+<li><strong>RiftMapper <em>(PoC)</em></strong>: An attempt to create a map of the Rift. Will allow us to remove the minimap while in a rift.</li>
+<li><strong>Runegem <em>(PoC)</em></strong>: The current working system for crafting your items into better items. Specifically, when applied to a gear socket, it applies a modifier to the related item.</li>
+<li><strong>Transmogs <em>(Spike)</em></strong>: A planned system that allows a player to change their looks towards any other collected gear piece.</li>
+</ul>
+<h2 id="project-management"><a class="header" href="#project-management">Project Management</a></h2>
+<ul>
+<li><strong>Contributor</strong>: Any person who requested the role in the discord. These people are the amazing group that intend to bring you this mod.</li>
+<li><strong>Coordinator</strong>: Per subteam, two coordinators are assigned by popular vote. These coordinators have additional responsibilities within the project. They are responsible for ensuring all topics in their area are summarized and followed up on. You can contact your coordinator for any questions and challenges you face. Their role is purely assistance, they do not have any decisive power.</li>
+<li><strong>PM Group</strong>: The small group of Project Managers. Their role is to ensure the project moves forward. They break ties and they ensure the team remains on focus.</li>
+</ul>
+<h2 id="dev-technical"><a class="header" href="#dev-technical">Dev Technical</a></h2>
+<h3 id="general-terms"><a class="header" href="#general-terms">General terms</a></h3>
+<ul>
+<li><strong>Java</strong>: The programming language used by the team and by Mojang, to make Minecraft and our mods.</li>
+<li><strong>JSON</strong>: The language used by datapacks to load data into Minecraft.</li>
+<li><strong>Mojank</strong>: A word used by modding people when they refer to a piece of code written by mojang, that causes us to question their and sometimes our own sanity.</li>
+<li><strong>Project Board</strong>: An overview of all open tasks for the Mod, you can asses it <a href="https://github.com/orgs/Dimension-Delvers/projects/1">HERE</a>.</li>
+</ul>
+<h3 id="project-board-tasks"><a class="header" href="#project-board-tasks">Project Board Tasks</a></h3>
+<ul>
+<li><strong>Feature</strong>: Something that is already decided or we have to do this either way. <em>Example: Rift Generation, Structure Generation, Modifier System (our better version of enchantments)</em></li>
+<li><strong>Proof of Concept (PoC)</strong>: One of the suggestions given by people. By creating a PoC, we will be able to test it out. If we only have 1 implemented PoC and we are all satisfied, then we might as well make it core. If we have a PoC and people have clear issues with the gameplay it brings, we must spend time on another PoC. <em>Example: Gear Sockets, Skill Crystals, Cost of dying</em></li>
+<li><strong>Spike</strong>: A spike is something we know we need, but we have not yet discussed how to do it, or maybe we have discussed it, but no clear path to implementation. Spikes can be very exploratory, sometimes even involving a mini PoC. Spikes generally should not be too long, just enough time to prove it might work. <em>Example: Multiblock Altar, Wireframe Minimap, Abilities</em></li>
+<li><strong>Datapack</strong>: A task to add a set of jsons as per <a href="code/datapack/datapack-formats.html">the datapack formats</a>. This task usually follows up on a relevant code ticket. This can be picked up by people with no skills in java.</li>
+</ul>
+<h2 id="build-technical"><a class="header" href="#build-technical">Build Technical</a></h2>
+<ul>
+<li><strong>JigSaw</strong>: The technical vanilla minecraft system that is used to place a structure into the world.</li>
+<li><strong>Processors</strong>: The technical vanilla minecraft system that allows a Structure Piece in a JigSaw to be modified and drastically change its looks.</li>
+<li><strong>Structure Piece</strong>: A single piece of a JigSaw structure, in our case, one room.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><object data="../other-files/meeting-notes/2025-02-15-DD-Weekly-Update.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="../other-files/meeting-notes/2025-02-15-DD-Weekly-Update.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="meetings/../other-files/meeting-notes/2025-02-15-DD-Weekly-Update.pdf">Download PDF</a>.</p>
     </embed>

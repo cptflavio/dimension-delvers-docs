@@ -11,6 +11,7 @@
 * **Modifier *(Feature)***: Any powerup applied to a player or to something else, will be implemented using the modifier system. This system is comparable to enchantments, but much more advanced and under our control.
 * **RiftMapper *(PoC)***: An attempt to create a map of the Rift. Will allow us to remove the minimap while in a rift. 
 * **Runegem *(PoC)***: The current working system for crafting your items into better items. Specifically, when applied to a gear socket, it applies a modifier to the related item.
+* **Transmogs *(Spike)***: A planned system that allows a player to change their looks towards any other collected gear piece.
  
 ## Project Management
 * **Contributor**: Any person who requested the role in the discord. These people are the amazing group that intend to bring you this mod.

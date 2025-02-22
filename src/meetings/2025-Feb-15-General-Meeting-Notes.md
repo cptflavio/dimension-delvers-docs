@@ -8,9 +8,6 @@
 
 Date: February 15 2025 Time: 8PM UTC
 
-## == Attendees ==
-Harley, DElyMyth, Andydirk88, Iwolfking, PumpkinDominance, ybhappy, Monkeyman640, Dread, Jyu, Jjo240, Patrigan, Barry Allen, Req, T2ThatGuy, Melancholic, d2g45, a1qs, wouts., Wh4l3, ZXMBIE, wagoogus, WarrenGore, Dozzer, Robotmonkey, mel, FireTeen, rizek, MukiTanuki
-
 ## == Summary and decisions ==
 Project team meeting was prepping powerpoint shown in meeting. 
 

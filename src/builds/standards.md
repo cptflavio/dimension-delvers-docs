@@ -9,4 +9,4 @@ Name is `processor_block_1`, the more specific ones have a suffix like: `process
 | Pink  | 4    | `processor_block_4` | complement |
 
 Use these when making builds, so the processors can easily target them.
-![processor_blocks](/src/builds/processor_blocks.png)
+![processor_blocks](processor_blocks.png)

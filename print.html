@@ -242,28 +242,35 @@ Code here
 <li><strong>Spike</strong>: A spike is something we know we need, but we have not yet discussed how to do it, or maybe we have discussed it high level, but no clear path to implementation. Spikes can be very exploratory, sometimes even involving a mini PoC. Spikes generally should not be too long, just enough time to prove it might work. A lot of the work in a spike will be conversation, make sure to take control of any Spike topic you pick up, including summarizing any ongoing discord conversation on the topic (if not already done by a Coordinator). <em>Example: Multiblock Altar, Wireframe Minimap, fishing</em></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="datapack-formats-in-dd"><a class="header" href="#datapack-formats-in-dd">Datapack formats in DD</a></h1>
-<p>A lot of Dimension Delvers's content is added through a unique datapack format. Modpack makers can fully customize how factions look and behave through easy to understand datapacks. Adding the datapack works exactly as it does in vanilla minecraft, so it shouldn't pose too much troubles.</p>
+<p>A lot of Dimension Delvers's content is added through a unique datapack format. Modpack makers can fully customize how specific things look and behave through easy to understand datapacks. Adding the datapack works exactly as it does in vanilla minecraft, so it shouldn't pose too much troubles.</p>
 <h2 id="datapacks"><a class="header" href="#datapacks">Datapacks?</a></h2>
 <p>New to making a datapack? The <a href="https://minecraft.wiki/w/Tutorial:Creating_a_data_pack">MC wiki's datapack creation page</a> has you covered. Just imagine the below formats to be in the very same vanilla list and everything will work out just fine.</p>
-<p>##Namespace
-The namespace in a datapack works a bit like your mod name. Mods have their own datapacks included with their own namespace.</p>
 <h2 id="dimension-delvers-namespace"><a class="header" href="#dimension-delvers-namespace">Dimension Delvers namespace</a></h2>
-<p>Dimension Delvers' namespace is dimensiondelvers. In this namespace we have added some basic examples that can guide you to create some new unique variations.</p>
+<p>The namespace in a datapack works a bit like the mod name. Mods have their own datapacks included with their own namespace. Dimension Delvers' namespace is dimensiondelvers. In this namespace we have added some basic examples that can guide you to create some new unique variations.</p>
 <h2 id="datapack-format-list"><a class="header" href="#datapack-format-list">Datapack Format List</a></h2>
 <ul>
-<li><a href="code/datapack/code/datapack/modifiers.html">Modifiers</a></li>
+<li><a href="code/datapack/code/datapack/format/modifiers.html">Modifiers</a></li>
+<li><a href="code/datapack/code/datapack/format/runegems.html">Runegems</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="modifiers"><a class="header" href="#modifiers">Modifiers</a></h1>
-<h2 id="modifier-files"><a class="header" href="#modifier-files">Modifier Files</a></h2>
+<h2 id="modifier"><a class="header" href="#modifier">Modifier</a></h2>
 <p>Modifiers are the core of the Dimension Delvers upgrade system.</p>
-<h3 id="format"><a class="header" href="#format">Format</a></h3>
+<h4 id="location"><a class="header" href="#location">Location</a></h4>
+<p><code>data/dimensiondelvers/dimensiondelvers/modifier</code> Take note of the second dimensionDelvers.</p>
+<h4 id="format"><a class="header" href="#format">Format</a></h4>
 <ul>
+<li><code>tier</code>: A number representing the tier of the effect.</li>
 <li><code>modifiers</code> : A list of modifier effects that will be applied to the entity by this modifier.</li>
 </ul>
-<h3 id="usage"><a class="header" href="#usage">Usage</a></h3>
-<p>You select one or more from the modifier effects described below and add it in the <code>modifiers</code> list.</p>
-<h3 id="example"><a class="header" href="#example">Example</a></h3>
+<h4 id="implementation-guidelines"><a class="header" href="#implementation-guidelines">Implementation Guidelines</a></h4>
+<ul>
+<li>A modifier should have a name that describes its intention. The explanation of the modifier can be found in the modifier effects. The name of the modifier should ideally follow the format: <code>&lt;name&gt;_t&lt;tier&gt;</code>.</li>
+<li>Ideally there is a modifier defined for every tier.</li>
+<li>You select one or more from the modifier effects described below and add it in the <code>modifiers</code> list.</li>
+</ul>
+<h4 id="example"><a class="header" href="#example">Example</a></h4>
 <pre><code class="language-json">{
+  "tier": 1,
   "modifiers": [
     {
       "type": "dimensiondelvers:attribute_modifier",
@@ -276,11 +283,11 @@ The namespace in a datapack works a bit like your mod name. Mods have their own 
   ]
 }
 </code></pre>
-<h3 id="note-on-rolls"><a class="header" href="#note-on-rolls">Note on rolls</a></h3>
+<h4 id="note-on-rolls"><a class="header" href="#note-on-rolls">Note on rolls</a></h4>
 <p>A <code>roll</code> is used to calculate the correct value of a modifier effect. This roll is a number between 0 and 1. It uses the <code>roll</code> value determined by the modifierInstane owner of the modifier.</p>
 <p>The final calculation is usually something like: <code>min_roll + ((max_roll - min_roll) * roll)</code></p>
 <h2 id="attributemodifiereffect"><a class="header" href="#attributemodifiereffect">AttributeModifierEffect</a></h2>
-<h3 id="format-1"><a class="header" href="#format-1">Format</a></h3>
+<h4 id="format-1"><a class="header" href="#format-1">Format</a></h4>
 <ul>
 <li><code>type</code>: <code>"dimensiondelvers:attribute"</code></li>
 <li><code>id</code>: The id is used to uniquely identify this attribute modifier efect in the list of modifier effects for this modifier. This is necessary to identify the correct attributes to remove when the item is removed.</li>
@@ -289,9 +296,9 @@ The namespace in a datapack works a bit like your mod name. Mods have their own 
 <li><code>max_roll</code>: The maximum value that can be rolled for this effect.</li>
 <li><code>operation</code>: The operation to perform on the attribute. Can be <code>add_value</code>, <code>add_multiplied_base</code>, <code>add_multiplied_total</code>. See vanilla AttributeModifier for more information.</li>
 </ul>
-<h3 id="usage-1"><a class="header" href="#usage-1">Usage</a></h3>
+<h4 id="usage"><a class="header" href="#usage">Usage</a></h4>
 <p>Each effect will add a random value between <code>min_roll</code> and <code>max_roll</code> to the <code>attribute</code> of the entity. The <code>operation</code> will determine how the value is added.</p>
-<h3 id="example-1"><a class="header" href="#example-1">Example</a></h3>
+<h4 id="example-1"><a class="header" href="#example-1">Example</a></h4>
 <pre><code class="language-json">{
   "type": "dimensiondelvers:attribute_modifier",
   "id": "minecraft:flat_attack_damage",
@@ -299,6 +306,62 @@ The namespace in a datapack works a bit like your mod name. Mods have their own 
   "min_roll": 1,
   "max_roll": 3,
   "operation": "add_value"
+}
+</code></pre>
+<h2 id="tags"><a class="header" href="#tags">Tags</a></h2>
+<p>The vanilla tag system is used to maintain the tags. Modifier tags will be used to select a modifier from a list of modifiers.</p>
+<h4 id="location-1"><a class="header" href="#location-1">Location</a></h4>
+<p><code>data/dimensiondelvers/tags/dimensiondelvers/modifier</code></p>
+<h4 id="format-2"><a class="header" href="#format-2">Format</a></h4>
+<ul>
+<li><code>values</code> : A list of modifier ResourceLocations.</li>
+<li><code>replace</code> : If true, the tag will replace the previous version of the tag. If false, it will add to the previous tag. Should not be used</li>
+</ul>
+<h4 id="example-2"><a class="header" href="#example-2">Example</a></h4>
+<pre><code class="language-json">{
+  "values": [
+    "dimensiondelvers:modifiers/flat_attack_damage"
+  ]
+}
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="runegems"><a class="header" href="#runegems">Runegems</a></h1>
+<h2 id="runegem-data"><a class="header" href="#runegem-data">Runegem Data</a></h2>
+<p>Runegem Data files are used during the creation of runegems. They are used to define the properties of the runegem and the modifiers it will have when applied to an item.</p>
+<h4 id="format-3"><a class="header" href="#format-3">Format</a></h4>
+<ul>
+<li><code>shape</code> : The shape of the runegem. This is a string that represents the shape of the runegem. Taken from the possible shapes.
+<ul>
+<li><code>circle</code></li>
+<li><code>square</code></li>
+<li><code>triangle</code></li>
+<li><code>diamond</code></li>
+<li><code>heart</code></li>
+<li><code>pentagon</code></li>
+</ul>
+</li>
+<li><code>tag</code> : A tag of modifier effects that will be applied to the entity by this modifier.</li>
+<li><code>tier</code> : The tier for this modifier. For now, we do not use all values.
+<ul>
+<li><code>raw</code>: <strong>USED</strong>, lowest tier.</li>
+<li><code>shaped</code></li>
+<li><code>cut</code>: <strong>USED</strong>, mid tier.</li>
+<li><code>polished</code></li>
+<li><code>framed</code>: <strong>USED</strong>, highest tier.</li>
+<li><code>unique</code>: <strong>USED</strong>, unique tier, no random effects.</li>
+</ul>
+</li>
+</ul>
+<h4 id="implementation-guidelines-1"><a class="header" href="#implementation-guidelines-1">Implementation Guidelines</a></h4>
+<ul>
+<li>A runegem should have a name that describes its intention. The complete name should be the format: <code>&lt;tier&gt;_&lt;name&gt;_rune</code>.</li>
+<li>The explanation of the tag can be found on <a href="code/datapack/format/code/datapack/format/modifiers.html">Modifiers</a>. The name of the tag should ideally be identical to the runegem name.</li>
+<li>The content of the tag can overlap with content from higher tiers. For example, a <code>cut</code> rune can have the stronger content from the <code>raw</code> rune, but it should also have its own content.</li>
+</ul>
+<h4 id="example-3"><a class="header" href="#example-3">Example</a></h4>
+<pre><code class="language-json">{
+    "shape": "circle",
+    "tag": "dimensiondelvers:modifiers/cut_health_rune",
+    "tier": "cut"
 }
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="software-and-technologies"><a class="header" href="#software-and-technologies">Software and Technologies</a></h1>

@@ -1,6 +1,8 @@
 # Runegems
 ## Runegem Data
 Runegem Data files are used during the creation of runegems. They are used to define the properties of the runegem and the modifiers it will have when applied to an item.
+#### Location
+`data/dimensiondelvers/dimensiondelvers/runegem_data` Take note of the second dimensionDelvers.
 #### Format
 * `shape` : The shape of the runegem. This is a string that represents the shape of the runegem. Taken from the possible shapes.
   * `circle`

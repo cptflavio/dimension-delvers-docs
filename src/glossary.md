@@ -34,3 +34,14 @@
 * **JigSaw**: The technical vanilla minecraft system that is used to place a structure into the world.
 * **Processors**: The technical vanilla minecraft system that allows a Structure Piece in a JigSaw to be modified and drastically change its looks.
 * **Structure Piece**: A single piece of a JigSaw structure, in our case, one room.
+* **Gridsize (lenght)**: The lenght of a single dimension of the smallest possible room. All other size rooms are multiplications of this (1x, 2x or 3x). The grid value we are working with is: 15.
+roomsize		The size of the rooms, often noted as XxYxZ, and mostly multiples of the gridsize is used, ie: 3x3x3. Note that the Y value denotes height.
+* **Standard room**: Rooms made out of processor blocks, that after being processed, makes the rooms the game is played in. Standard come in varying room sizes. 
+* **Processor blocks**:	A few groups of blocks that the processor replaces with themed blocks. Those blocks are used in standard rooms, to be themed with a processor every time they are generated in game.
+* **Theme**: A set of blocks linked to each used processor block, all with a weight (probability). The processor uses this to determine which block needs to be used to replace every processor block in the standard room.
+* **Point of Interest (PoI)**:	A small structure that is generated inside the room, containing mob spawners and loot. They can be either: standing isolated on ground, partly inside the wall, in a corner, or hanging from the ceiling. All can have varying sizes.
+* **Doorway**: A 3x5 hole in the wall, through which a player gets in or out of a room. They are on set locations, often (but not exlusively) 1 on each vertical face, so 4 per room. Rooms are generated from doorway to doorway, with a ring in between.
+* **Ring**: A 3x5x1 ring of blocks, between 2 doorways. They are used to connect rooms, and to generate the next room.
+* **Stable room**: A strictly 3x3x3 room, with a door in the middle of each verical face. All 4 doors are easely reachable from one another, without having to dig or travel large parts of the room. Stable rooms are the first rooms in the rift, and they are straightforward and coherent.
+* **Unstable room**: A 3xYx3 room, with doors in the center only. The doors are not necessarily easily reachable, and a player might require to first travel to a corner, before having access to the door. Mostly used as a room between Stable and Chaos.
+* **Chaos room**: All other rooms that are not Stable or Unstable. Doors are on set places, but not all door are open, and not every face has exactly 1 door. Those rooms are confusing and complex, and are placed on the outside of the rift.

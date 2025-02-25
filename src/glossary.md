@@ -35,7 +35,7 @@
 * **Processors**: The technical vanilla minecraft system that allows a Structure Piece in a JigSaw to be modified and drastically change its looks.
 * **Structure Piece**: A single piece of a JigSaw structure, in our case, one room.
 * **Gridsize (lenght)**: The lenght of a single dimension of the smallest possible room. All other size rooms are multiplications of this (1x, 2x or 3x). The grid value we are working with is: 15.
-roomsize		The size of the rooms, often noted as XxYxZ, and mostly multiples of the gridsize is used, ie: 3x3x3. Note that the Y value denotes height.
+* **roomsize**: The size of the rooms, often noted as XxYxZ, and mostly multiples of the gridsize is used, ie: 3x3x3. Note that the Y value denotes height.
 * **Standard room**: Rooms made out of processor blocks, that after being processed, makes the rooms the game is played in. Standard come in varying room sizes. 
 * **Processor blocks**:	A few groups of blocks that the processor replaces with themed blocks. Those blocks are used in standard rooms, to be themed with a processor every time they are generated in game.
 * **Theme**: A set of blocks linked to each used processor block, all with a weight (probability). The processor uses this to determine which block needs to be used to replace every processor block in the standard room.

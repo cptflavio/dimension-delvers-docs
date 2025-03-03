@@ -14,6 +14,8 @@
     - [Standards](builds/standards.md)
     - [Processors](builds/processors.md)
 - [Glossary](glossary.md)
+- [Polls](polls/polls.md)
+    - [Durability](polls/durability.md) 
 - [Meeting Notes]()
     - [General Meetings]()
         - [Feb-22-2025 Community Meeting](meetings/2025-Feb-22-General-Meeting-Notes.md)

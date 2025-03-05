@@ -9,6 +9,8 @@
       - [Runegems](code/datapack/format/runegems.md) 
 - [Art]()
     - [Style Guide](art/style-guide/README.md)
+	    - [General](art/style-guide/general.md)
+	    - [Blocks](art/style-guide/blocks.md)
     - [Technologies](art/technologies/README.md)
 - [Builds]()
     - [Standards](builds/standards.md)

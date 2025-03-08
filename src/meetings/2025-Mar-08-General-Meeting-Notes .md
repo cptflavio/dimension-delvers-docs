@@ -23,7 +23,9 @@ Builds are really important so we can have interesting rifts. We are wanting to 
 
 Don't be afraid to throw something down even if you don't consider yourself good at building. 
 
-Decision Process - Discussion in voice or chat -> Idea polishing in Forums -> Polling for options (more than 2) -> Guidelines / Results published on mdBook once decision is taken -> Changes/Actions timelines depending on decisions. Also reference guide in mdBook:  https://dimension-delvers.github.io/dimension-delvers-docs/polls/polls.html 
+Decision Process - Discussion in voice or chat -> Idea polishing in Forums -> Polling for options (more than 2) -> Guidelines / Results published on mdBook once decision is taken -> Changes/Actions timelines depending on decisions. 
+
+Also reference guide in mdBook:  https://dimension-delvers.github.io/dimension-delvers-docs/polls/polls.html 
 
 We wont have a playtesting team, everyone is the playtesting team
 

@@ -6,7 +6,7 @@
 
 # Notes
 
-##== Kudos and Recognition ==
+## == Kudos and Recognition ==
 Wh4l3 for new artwork, Patrigan for patrigan, Divides By Zero for work on skill leveling, Robotmonkey for work on abilities branch. 
 
 ## == Summary and decisions ==

@@ -15,6 +15,8 @@
 - [Builds]()
     - [Standards](builds/standards.md)
     - [Processors](builds/processors.md)
+- [Resources]()
+    - [Mod Development](resources/mod-development.md)
 - [Glossary](glossary.md)
 - [Polls](polls/polls.md)
     - [Durability](polls/durability.md)

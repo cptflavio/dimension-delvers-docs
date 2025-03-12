@@ -21,6 +21,8 @@ Bricks can be used to indicate a more solid part.
 Use these when making builds, both rooms and POIs, so the processors can easily target them.
 ![processor_blocks](processor_blocks.png)
 
+Water can be used in the build as the themed liquid.
+
 The other processor blocks can be used, but require a custom processor from the builder, and will be room specific, eg. a tree always needing logs. 
 
 

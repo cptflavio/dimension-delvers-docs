@@ -2,6 +2,7 @@
 
 [Introduction](README.md)
 
+- [How to contribute](contribute.md)
 - [Mod(Pack) Design](design/DesignDocHome.md)
 - [Code](code/README.md)
     - [Datapack Formats](code/datapack/datapack-formats.md) 

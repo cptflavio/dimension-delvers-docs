@@ -1,8 +1,8 @@
 # Modifiers
 ## Modifier
-Modifiers are the core of the Dimension Delvers upgrade system.
+Modifiers are the core of the WotR upgrade system.
 #### Location
-`data/dimensiondelvers/dimensiondelvers/modifier` Take note of the second dimensionDelvers. 
+`data/wotr/wotr/modifier` Take note of the second wotr. 
 #### Format
 * `tier`: A number representing the tier of the effect.
 * `modifiers` : A list of modifier effects that will be applied to the entity by this modifier.
@@ -16,7 +16,7 @@ Modifiers are the core of the Dimension Delvers upgrade system.
   "tier": 1,
   "modifiers": [
     {
-      "type": "dimensiondelvers:attribute_modifier",
+      "type": "wotr:attribute_modifier",
       "id": "minecraft:flat_attack_damage",
       "attribute": "minecraft:attack_damage",
       "min_roll": 1,
@@ -33,7 +33,7 @@ The final calculation is usually something like: `min_roll + ((max_roll - min_ro
 
 ## AttributeModifierEffect
 #### Format
-* `type`: `"dimensiondelvers:attribute"`
+* `type`: `"wotr:attribute"`
 * `id`: The id is used to uniquely identify this attribute modifier efect in the list of modifier effects for this modifier. This is necessary to identify the correct attributes to remove when the item is removed.
 * `attribute`: The attribute adjusted by this effect.
 * `min_roll`: The minimum value that can be rolled for this effect. 
@@ -44,7 +44,7 @@ Each effect will add a random value between `min_roll` and `max_roll` to the `at
 #### Example
 ```json
 {
-  "type": "dimensiondelvers:attribute_modifier",
+  "type": "wotr:attribute_modifier",
   "id": "minecraft:flat_attack_damage",
   "attribute": "minecraft:attack_damage",
   "min_roll": 1,
@@ -56,7 +56,7 @@ Each effect will add a random value between `min_roll` and `max_roll` to the `at
 ## Tags
 The vanilla tag system is used to maintain the tags. Modifier tags will be used to select a modifier from a list of modifiers.
 #### Location
-`data/dimensiondelvers/tags/dimensiondelvers/modifier`
+`data/wotr/tags/wotr/modifier`
 #### Format
 * `values` : A list of modifier ResourceLocations.
 * `replace` : If true, the tag will replace the previous version of the tag. If false, it will add to the previous tag. Should not be used
@@ -64,7 +64,7 @@ The vanilla tag system is used to maintain the tags. Modifier tags will be used 
 ```json
 {
   "values": [
-    "dimensiondelvers:modifiers/flat_attack_damage"
+    "wotr:modifiers/flat_attack_damage"
   ]
 }
 ```

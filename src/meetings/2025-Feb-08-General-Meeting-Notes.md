@@ -12,7 +12,7 @@
 * Do we need to separate forums?
 * Forums for outside discussion
 
-* Subreddit: https://www.reddit.com/r/DimensionDelvers/
+* Subreddit: https://www.reddit.com/r/WanderersoftheRift/
 
 * Name needed to really settle on the correct subreddit
   * Thread for name brainvomit

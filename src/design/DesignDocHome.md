@@ -1,3 +1,3 @@
-Dimension Delvers Mod(Pack) Design
+Wanderers of the Rift Mod(Pack) Design
 
 Home Page of The Design Doc

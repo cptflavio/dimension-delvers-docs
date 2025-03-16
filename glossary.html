@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Glossary - Dimension Delvers Internal Documentation</title>
+        <title>Glossary - Wanderers of the Rift Internal Documentation</title>
 
 
         <!-- Custom HTML head -->
@@ -24,9 +24,9 @@
         <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -120,7 +120,7 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">Dimension Delvers Internal Documentation</h1>
+                    <h1 class="menu-title">Wanderers of the Rift Internal Documentation</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -161,7 +161,8 @@
                         <h1 id="glossary"><a class="header" href="#glossary">Glossary</a></h1>
 <h2 id="mod"><a class="header" href="#mod">Mod</a></h2>
 <ul>
-<li><strong>Dimension Delvers</strong>: Current project working name. Not final.</li>
+<li><strong>Dimension Delvers</strong>: Old project name.</li>
+<li><strong>Wanderers of the Rift</strong>: Current project working name.</li>
 <li><strong>Rift</strong>: Current working name for the randomly generated dungeons that the player will enter.</li>
 <li><strong>Rift Key</strong>: Current working name for the item that can open a portal to a rift.</li>
 <li><strong>Theme</strong>: The visuals and general content that is applied to a rift. Utilizes processors.</li>
@@ -200,17 +201,28 @@
 <li><strong>JigSaw</strong>: The technical vanilla minecraft system that is used to place a structure into the world.</li>
 <li><strong>Processors</strong>: The technical vanilla minecraft system that allows a Structure Piece in a JigSaw to be modified and drastically change its looks.</li>
 <li><strong>Structure Piece</strong>: A single piece of a JigSaw structure, in our case, one room.</li>
+<li><strong>Gridsize (lenght)</strong>: The lenght of a single dimension of the smallest possible room. All other size rooms are multiplications of this (1x, 2x or 3x). The grid value we are working with is: 15.</li>
+<li><strong>roomsize</strong>: The size of the rooms, often noted as XxYxZ, and mostly multiples of the gridsize is used, ie: 3x3x3. Note that the Y value denotes height.</li>
+<li><strong>Standard room</strong>: Rooms made out of processor blocks, that after being processed, makes the rooms the game is played in. Standard come in varying room sizes.</li>
+<li><strong>Processor blocks</strong>:	A few groups of blocks that the processor replaces with themed blocks. Those blocks are used in standard rooms, to be themed with a processor every time they are generated in game.</li>
+<li><strong>Theme</strong>: A set of blocks linked to each used processor block, all with a weight (probability). The processor uses this to determine which block needs to be used to replace every processor block in the standard room.</li>
+<li><strong>Point of Interest (PoI)</strong>:	A small structure that is generated inside the room, containing mob spawners and loot. They can be either: standing isolated on ground, partly inside the wall, in a corner, or hanging from the ceiling. All can have varying sizes.</li>
+<li><strong>Doorway</strong>: A 3x5 hole in the wall, through which a player gets in or out of a room. They are on set locations, often (but not exlusively) 1 on each vertical face, so 4 per room. Rooms are generated from doorway to doorway, with a ring in between.</li>
+<li><strong>Ring</strong>: A 3x5x1 ring of blocks, between 2 doorways. They are used to connect rooms, and to generate the next room.</li>
+<li><strong>Stable room</strong>: A strictly 3x3x3 room, with a door in the middle of each verical face. All 4 doors are easely reachable from one another, without having to dig or travel large parts of the room. Stable rooms are the first rooms in the rift, and they are straightforward and coherent.</li>
+<li><strong>Unstable room</strong>: A 3xYx3 room, with doors in the center only. The doors are not necessarily easily reachable, and a player might require to first travel to a corner, before having access to the door. Mostly used as a room between Stable and Chaos.</li>
+<li><strong>Chaos room</strong>: All other rooms that are not Stable or Unstable. Doors are on set places, but not all door are open, and not every face has exactly 1 door. Those rooms are confusing and complex, and are placed on the outside of the rift.</li>
 </ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="builds/processors.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="resources/mod-development.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="meetings/2025-Feb-22-General-Meeting-Notes.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="polls/polls.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -220,11 +232,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="builds/processors.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="resources/mod-development.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="meetings/2025-Feb-22-General-Meeting-Notes.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="polls/polls.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

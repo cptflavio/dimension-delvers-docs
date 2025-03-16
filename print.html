@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Dimension Delvers Internal Documentation</title>
+        <title>Wanderers of the Rift Internal Documentation</title>
         <meta name="robots" content="noindex">
 
 
@@ -25,9 +25,9 @@
         <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -121,7 +121,7 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">Dimension Delvers Internal Documentation</h1>
+                    <h1 class="menu-title">Wanderers of the Rift Internal Documentation</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -156,8 +156,33 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="dimension-delvers-internal-documentation"><a class="header" href="#dimension-delvers-internal-documentation">Dimension Delvers Internal Documentation</a></h1>
-<p>This is the new place for hopefully keeping all the docs regarding DD together instead of having them scattered across Discord, Google Docs, and whatever else.</p>
+                        <h1 id="wanderers-of-the-rift"><a class="header" href="#wanderers-of-the-rift">Wanderers of the Rift</a></h1>
+<h2 id="who-we-are"><a class="header" href="#who-we-are">Who we are</a></h2>
+<p>Wanderers of the Rift (WotR) is a new Minecraft modpack in the ARPG-pack genre. This is a community driven and developed project likely to end up in 1.22 Neoforge Minecraft.</p>
+<h2 id="our-values"><a class="header" href="#our-values">Our Values</a></h2>
+<ul>
+<li>Community Driven
+<ul>
+<li>Open source</li>
+<li>Anyone can contribute</li>
+<li>Polls for decisions &amp; priority ranking</li>
+<li>Distributed leadership</li>
+</ul>
+</li>
+<li>Accessibility
+<ul>
+<li>Play your way</li>
+<li>Custom configs</li>
+</ul>
+</li>
+<li>Transparency
+<ul>
+<li>Open communications</li>
+<li>No monetary involvement</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="how-to-contribute"><a class="header" href="#how-to-contribute">How to Contribute</a></h1>
 <h2 id="how-to-create-pages"><a class="header" href="#how-to-create-pages">How to Create Pages</a></h2>
 <h3 id="1-get-access-to-the-repository"><a class="header" href="#1-get-access-to-the-repository">1. Get Access to the Repository</a></h3>
 <p>To add or edit pages in the mdBook, you need to be a member of the DD GitHub organization. If you haven't received an invite to the GitHub organization yet, please ask one of the organization Owners to invite you.</p>
@@ -218,10 +243,104 @@ Code here
 (Remove the backslashes)</li>
 </ul>
 <p>If you have any questions, feel free to ask in the Discord server</p>
-<div style="break-before: page; page-break-before: always;"></div><p>Dimension Delvers Mod(Pack) Design</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="minimum-viable-product-mvp"><a class="header" href="#minimum-viable-product-mvp">Minimum Viable Product (MVP)</a></h1>
+<h2 id="what-is-an-mvp"><a class="header" href="#what-is-an-mvp">What is an MVP?</a></h2>
+<p>An MVP is a product with just enough features to satisfy the early players, and to provide feedback for future mod development. It is a product that is developed with the least amount of effort and resources, but still has enough features to be usable and valuable.</p>
+<p>In other words, it is the "simplest" form of the mod as the team envisions it.</p>
+<h2 id="why-is-an-mvp-important"><a class="header" href="#why-is-an-mvp-important">Why is an MVP important?</a></h2>
+<p>An MVP is important because it allows the team to get feedback from the players early on in the development process. We set up an MVP to get something available fast. Our hope is that by doing so, the  team could get to work early, without having to wait for a decision process.</p>
+<p>We also firmly believe that seeing is understanding. Having the players actually test the features will help them better understand and allows them to give feedback based on actual experience.</p>
+<h2 id="what-about-the-polling-process"><a class="header" href="#what-about-the-polling-process">What about the polling process?</a></h2>
+<p>We split the tasks in the MVP into 3 categories, Spike, Proof of Concept (PoC) and Feature (see <a href="glossary.html">Glossary</a>). While a feature is a certainty, the other two are not. The polling process ican still make these PoCs and Spikes into actual features, but they might also be getting scrapped completely. The developers should be aware that anything they make is not considered final until a poll is done.</p>
+<h2 id="the-3-levels-of-features"><a class="header" href="#the-3-levels-of-features">The 3 Levels of features</a></h2>
+<p>We identify 3 levels of features, with varying degrees of decidedness.</p>
+<ul>
+<li><strong>Feature</strong>: Something that is already decided or we have to do this either way. <em>Example: Rift Generation, Structure Generation, Modifier System, Remove Durability</em></li>
+<li><strong>Proof of Concept (PoC)</strong>: One of the suggestions given by people. By creating a PoC, we will be able to test it out. If we only have 1 implemented PoC and we are all satisfied, then we might as well make it core. If we have a PoC and people have clear issues with the gameplay it brings, we must spend time on another PoC. <em>Example: Gear Sockets, Skill Crystals, Cost of dying, Abilities</em></li>
+<li><strong>Spike</strong>: A spike is something we know we need, but we have not yet discussed how to do it, or maybe we have discussed it, but no clear path to implementation. Spikes can be very exploratory, sometimes even involving a mini PoC. Spikes generally should not be too long, just enough time to prove it might work. <em>Example: Multiblock Altar, Wireframe Minimap</em></li>
+</ul>
+<h2 id="mvp-featurelist"><a class="header" href="#mvp-featurelist">MVP Featurelist</a></h2>
+<p>The MVP contains following features:</p>
+<ul>
+<li>Basic Stat System - Should be easily accessible from other systems
+<ul>
+<li><em>Spike</em>: Vanilla Attributes =&gt; Make a list of Vanilla attributes and missing attributes we need</li>
+<li><em>Feature</em>: Entity Modifiers, based on vanilla Enchantment code, but better, for <strong>max Datapacking power</strong> =&gt; Usable for Gear Sockets, Implicits, Skill Trees, Food, Collectable unlocks, Levelling system, Champion Mobs, ...</li>
+</ul>
+</li>
+<li>Ability System
+<ul>
+<li><em>PoC</em>: Abilities are datapackable and allow for a lot of variety. They have cooldowns and are each triggered by a configurable keybind.</li>
+<li><em>PoC</em>: Abilities are stored on an item that you equip in a set of special slots</li>
+<li><em>PoC</em>: Abilities have a randomized Skill Tree that gives minor boosts to the ability.</li>
+</ul>
+</li>
+<li>Gear
+<ul>
+<li><em>PoC</em>: Socket System
+<ul>
+<li>Runegems drop that can be applied to gear to give it a modifier</li>
+<li>Runegems have different tiers of power</li>
+<li>Gear can have up to 6 sockets</li>
+<li>Each Socket can only take one shape of runegems</li>
+<li>The Rune Anvil is used to apply runegems to gear</li>
+<li>Vanilla gear can also have Gear Sockets.</li>
+</ul>
+</li>
+<li><em>PoC</em>: Enchantments completely removed</li>
+</ul>
+</li>
+<li>Rift
+<ul>
+<li><em>Feature</em>: Player Accessing the Rift (Entering/Leaving) =&gt; Dimension Generation</li>
+<li><em>Feature</em>: Rift Generation in a 15x15 grid =&gt; Basic Jigsaw Structure Generation</li>
+<li><em>PoC</em>: Rift Stability System
+<ul>
+<li>The further away from the rift portal you go, the messier and more difficult to travers the rift becomes.</li>
+<li>The stable areas have easy to traverse terrain and always 4 central exits on the sides.</li>
+<li>The unstable areas still have the 4 exits, but make it more difficult to reach them.</li>
+<li>The chaos areas have different size rooms and corridors, and the placement and number of exits is more randomized. (Not part of MVP)</li>
+</ul>
+</li>
+<li><em>Spike</em>: PoIs =&gt; Points of Interest
+<ul>
+<li>3x3, 5x5, 7x7, 9x9</li>
+</ul>
+</li>
+<li><em>PoC</em>: Processors are used to generate Themes
+<ul>
+<li><em>PoC</em>: Simple Cave theme</li>
+<li><em>PoC</em>: Simple Forest theme</li>
+</ul>
+</li>
+<li><em>PoC</em>: Rift Key Creation is done by distilling blocks into essences and these essences help dictate what kind of theme is generated.</li>
+<li><em>PoC</em>: Portal Block that can be used to make a freestanding portal or one against a wall.</li>
+<li><em>PoC</em>: RiftMapper, a system to display the rift in a 3D map.</li>
+</ul>
+</li>
+<li>Rift Content
+<ul>
+<li><em>Spike</em>: Spawner =&gt; Make vanilla mobs spawn in a configurable way using Processors</li>
+<li>Only vanilla mobs will spawn</li>
+<li><em>PoC</em>: Chests and chestlooting
+<ul>
+<li>just 1 chest for MVP and no chest slicing for MVP.</li>
+</ul>
+</li>
+<li><em>Spike</em>: Simplest objective (Kill X monsters)</li>
+</ul>
+</li>
+<li>Other
+<ul>
+<li><em>Spike</em>: Keep original Inventory system for rift</li>
+<li><em>Feature</em>: Removal of durability.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><p>Wanderers of the Rift Mod(Pack) Design</p>
 <p>Home Page of The Design Doc</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="code-home"><a class="header" href="#code-home">Code Home</a></h1>
-<p>Welcome to the Code Home Page. This is where you can find all the code related information for the Dimension Delvers Mod(Pack).</p>
+<p>Welcome to the Code Home Page. This is where you can find all the code related information for the Wanderers of the Rift Mod(Pack).</p>
 <h2 id="important-code-pages"><a class="header" href="#important-code-pages">Important Code Pages</a></h2>
 <ul>
 <li><a href="code/code/decision/decisions.html">Code Decisions</a>: The entry point to general code decisions.</li>
@@ -241,12 +360,12 @@ Code here
 <li><strong>Proof of Concept (PoC)</strong>: The implementation of one of the suggestions given by people. By creating a PoC, we will be able to test it out, to help deciding if we want to continue on it. PoCs still require a lot of conversation, so try to involve the team as much as possible before implementing things. <em>Example: Gear Sockets, AbilitY Crystals, Cost of dying</em></li>
 <li><strong>Spike</strong>: A spike is something we know we need, but we have not yet discussed how to do it, or maybe we have discussed it high level, but no clear path to implementation. Spikes can be very exploratory, sometimes even involving a mini PoC. Spikes generally should not be too long, just enough time to prove it might work. A lot of the work in a spike will be conversation, make sure to take control of any Spike topic you pick up, including summarizing any ongoing discord conversation on the topic (if not already done by a Coordinator). <em>Example: Multiblock Altar, Wireframe Minimap, fishing</em></li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="datapack-formats-in-dd"><a class="header" href="#datapack-formats-in-dd">Datapack formats in DD</a></h1>
-<p>A lot of Dimension Delvers's content is added through a unique datapack format. Modpack makers can fully customize how specific things look and behave through easy to understand datapacks. Adding the datapack works exactly as it does in vanilla minecraft, so it shouldn't pose too much troubles.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="datapack-formats-in-wotr"><a class="header" href="#datapack-formats-in-wotr">Datapack formats in WotR</a></h1>
+<p>A lot of the content in WotR is added through a unique datapack format. Modpack makers can fully customize how specific things look and behave through easy to understand datapacks. Adding the datapack works exactly as it does in vanilla minecraft, so it shouldn't pose too much troubles.</p>
 <h2 id="datapacks"><a class="header" href="#datapacks">Datapacks?</a></h2>
 <p>New to making a datapack? The <a href="https://minecraft.wiki/w/Tutorial:Creating_a_data_pack">MC wiki's datapack creation page</a> has you covered. Just imagine the below formats to be in the very same vanilla list and everything will work out just fine.</p>
-<h2 id="dimension-delvers-namespace"><a class="header" href="#dimension-delvers-namespace">Dimension Delvers namespace</a></h2>
-<p>The namespace in a datapack works a bit like the mod name. Mods have their own datapacks included with their own namespace. Dimension Delvers' namespace is dimensiondelvers. In this namespace we have added some basic examples that can guide you to create some new unique variations.</p>
+<h2 id="wanderers-of-the-rift-namespace"><a class="header" href="#wanderers-of-the-rift-namespace">Wanderers of the Rift namespace</a></h2>
+<p>The namespace in a datapack works a bit like the mod name. Mods have their own datapacks included with their own namespace. The Wanderers of the Rift mod's namespace is <code>wotr</code>. In this namespace we have added some basic examples that can guide you to create some new unique variations.</p>
 <h2 id="datapack-format-list"><a class="header" href="#datapack-format-list">Datapack Format List</a></h2>
 <ul>
 <li><a href="code/datapack/code/datapack/format/modifiers.html">Modifiers</a></li>
@@ -254,9 +373,9 @@ Code here
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="modifiers"><a class="header" href="#modifiers">Modifiers</a></h1>
 <h2 id="modifier"><a class="header" href="#modifier">Modifier</a></h2>
-<p>Modifiers are the core of the Dimension Delvers upgrade system.</p>
+<p>Modifiers are the core of the WotR upgrade system.</p>
 <h4 id="location"><a class="header" href="#location">Location</a></h4>
-<p><code>data/dimensiondelvers/dimensiondelvers/modifier</code> Take note of the second dimensionDelvers.</p>
+<p><code>data/wotr/wotr/modifier</code> Take note of the second wotr.</p>
 <h4 id="format"><a class="header" href="#format">Format</a></h4>
 <ul>
 <li><code>tier</code>: A number representing the tier of the effect.</li>
@@ -273,7 +392,7 @@ Code here
   "tier": 1,
   "modifiers": [
     {
-      "type": "dimensiondelvers:attribute_modifier",
+      "type": "wotr:attribute_modifier",
       "id": "minecraft:flat_attack_damage",
       "attribute": "minecraft:attack_damage",
       "min_roll": 1,
@@ -289,7 +408,7 @@ Code here
 <h2 id="attributemodifiereffect"><a class="header" href="#attributemodifiereffect">AttributeModifierEffect</a></h2>
 <h4 id="format-1"><a class="header" href="#format-1">Format</a></h4>
 <ul>
-<li><code>type</code>: <code>"dimensiondelvers:attribute"</code></li>
+<li><code>type</code>: <code>"wotr:attribute"</code></li>
 <li><code>id</code>: The id is used to uniquely identify this attribute modifier efect in the list of modifier effects for this modifier. This is necessary to identify the correct attributes to remove when the item is removed.</li>
 <li><code>attribute</code>: The attribute adjusted by this effect.</li>
 <li><code>min_roll</code>: The minimum value that can be rolled for this effect.</li>
@@ -300,7 +419,7 @@ Code here
 <p>Each effect will add a random value between <code>min_roll</code> and <code>max_roll</code> to the <code>attribute</code> of the entity. The <code>operation</code> will determine how the value is added.</p>
 <h4 id="example-1"><a class="header" href="#example-1">Example</a></h4>
 <pre><code class="language-json">{
-  "type": "dimensiondelvers:attribute_modifier",
+  "type": "wotr:attribute_modifier",
   "id": "minecraft:flat_attack_damage",
   "attribute": "minecraft:attack_damage",
   "min_roll": 1,
@@ -311,7 +430,7 @@ Code here
 <h2 id="tags"><a class="header" href="#tags">Tags</a></h2>
 <p>The vanilla tag system is used to maintain the tags. Modifier tags will be used to select a modifier from a list of modifiers.</p>
 <h4 id="location-1"><a class="header" href="#location-1">Location</a></h4>
-<p><code>data/dimensiondelvers/tags/dimensiondelvers/modifier</code></p>
+<p><code>data/wotr/tags/wotr/modifier</code></p>
 <h4 id="format-2"><a class="header" href="#format-2">Format</a></h4>
 <ul>
 <li><code>values</code> : A list of modifier ResourceLocations.</li>
@@ -320,7 +439,7 @@ Code here
 <h4 id="example-2"><a class="header" href="#example-2">Example</a></h4>
 <pre><code class="language-json">{
   "values": [
-    "dimensiondelvers:modifiers/flat_attack_damage"
+    "wotr:modifiers/flat_attack_damage"
   ]
 }
 </code></pre>
@@ -328,7 +447,7 @@ Code here
 <h2 id="runegem-data"><a class="header" href="#runegem-data">Runegem Data</a></h2>
 <p>Runegem Data files are used during the creation of runegems. They are used to define the properties of the runegem and the modifiers it will have when applied to an item.</p>
 <h4 id="location-2"><a class="header" href="#location-2">Location</a></h4>
-<p><code>data/dimensiondelvers/dimensiondelvers/runegem_data</code> Take note of the second dimensionDelvers.</p>
+<p><code>data/wotr/wotr/runegem_data</code> Take note of the second wotr.</p>
 <h4 id="format-3"><a class="header" href="#format-3">Format</a></h4>
 <ul>
 <li><code>shape</code> : The shape of the runegem. This is a string that represents the shape of the runegem. Taken from the possible shapes.
@@ -362,27 +481,108 @@ Code here
 <h4 id="example-3"><a class="header" href="#example-3">Example</a></h4>
 <pre><code class="language-json">{
     "shape": "circle",
-    "tag": "dimensiondelvers:modifiers/cut_health_rune",
+    "tag": "wotr:modifiers/cut_health_rune",
     "tier": "cut"
 }
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="software-and-technologies"><a class="header" href="#software-and-technologies">Software and Technologies</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="style-guide"><a class="header" href="#style-guide">Style Guide</a></h1>
+<p>Rules for making models, textures and animations. These are meant to keep our art coherent.</p>
+<h2 id="importance"><a class="header" href="#importance">Importance</a></h2>
+<p>Not all rules are quite as important as others. Because of this we will be marking them with a symbol of how important they are. These symbols are as follows:</p>
+<ul>
+<li>❔General guideline</li>
+<li>⚠️ Try not to break</li>
+<li>🛑 DO NOT BREAK EVEN IF YOU'RE WHOLE FAMILY'S LIVES ARE AT STAKE</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="general"><a class="header" href="#general">General</a></h1>
+<p>Rules that apply for everything.</p>
+<h2 id="textures"><a class="header" href="#textures">Textures</a></h2>
+<ul>
+<li>🛑 All textures should be 16x textures.</li>
+</ul>
+<h2 id="models"><a class="header" href="#models">Models</a></h2>
+<ul>
+<li>⚠️ UV should use box UV as much as possible. This is to make it easier for others to understand our textures.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="blocks"><a class="header" href="#blocks">Blocks</a></h1>
+<h2 id="textures-1"><a class="header" href="#textures-1">Textures</a></h2>
+<ul>
+<li>
+<p>⚠️ Try limit the shades of different materials to 6 colors or less.</p>
+</li>
+<li>
+<p>⚠️ Use slight hue shifting for the different shades</p>
+</li>
+</ul>
+<h2 id="models-1"><a class="header" href="#models-1">Models</a></h2>
+<ul>
+<li>
+<p>🛑 The only blocks that should be allowed to have more complex models are block entities, crafting stations and light blocks.</p>
+</li>
+<li>
+<p>🛑 Blocks must fit inside a 16 cube<sup>3</sup> volume, with the exception of conditional animations.</p>
+</li>
+</ul>
+<h2 id="animations"><a class="header" href="#animations">Animations</a></h2>
+<ul>
+<li>⚠️ Keep the amount of parts that move all the time within reason.</li>
+</ul>
+<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
+<p><img src="art/style-guide/blocks/common_1x1_chest.png" alt="common_1x1_chest.png" /></p>
+<p><sub><i>Made by: Wh4I3</i></sub></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="software-and-technologies"><a class="header" href="#software-and-technologies">Software and Technologies</a></h1>
 <p>All the software we all should be using</p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="processor-blocks"><a class="header" href="#processor-blocks">Processor Blocks</a></h2>
 <p>Name is <code>processor_block_1</code>, the more specific ones have a suffix like: <code>processor_block_1_slab</code>.</p>
 <div class="table-wrapper"><table><thead><tr><th>Color</th><th>ID</th><th>Name</th><th>Use</th></tr></thead><tbody>
-<tr><td>Grey</td><td>1</td><td><code>processor_block_1</code></td><td>walls</td></tr>
-<tr><td>Brown</td><td>2</td><td><code>processor_block_2</code></td><td>paths</td></tr>
-<tr><td>Grass</td><td>3</td><td><code>processor_block_3</code></td><td>ground</td></tr>
-<tr><td>Pink</td><td>4</td><td><code>processor_block_4</code></td><td>complement</td></tr>
+<tr><td>Grey</td><td>1</td><td><code>processor_block_1</code></td><td>Walls</td></tr>
+<tr><td>Orange</td><td>2</td><td><code>processor_block_2</code></td><td>Paths</td></tr>
+<tr><td>Green</td><td>3</td><td><code>processor_block_3</code></td><td>Floors</td></tr>
+<tr><td>Purple</td><td>4</td><td><code>processor_block_4</code></td><td>Alt Wall</td></tr>
+<tr><td>Blue</td><td>5</td><td><code>processor_block_5</code></td><td>Dark Floor</td></tr>
+<tr><td>Yellow</td><td>6</td><td><code>processor_block_6</code></td><td>Planks</td></tr>
+<tr><td>Black</td><td>7</td><td><code>processor_block_7</code></td><td>Bricks</td></tr>
 </tbody></table>
 </div>
-<p>Use these when making builds, so the processors can easily target them.
+<p>Where walls, paths and floors comprise the bulk of the room.</p>
+<p>Alt wall can be used for etching, and indicators like cracks.
+Dark floor can be used in corners, further away from the path.
+Planks will (almost) always be planks, for things like bridges.
+Bricks can be used to indicate a more solid part.</p>
+<p>Use these when making builds, both rooms and POIs, so the processors can easily target them.
 <img src="builds/processor_blocks.png" alt="processor_blocks" /></p>
-<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="glossary"><a class="header" href="#glossary">Glossary</a></h1>
+<p>Water can be used in the build as the themed liquid.</p>
+<p>The other processor blocks can be used, but require a custom processor from the builder, and will be room specific, eg. a tree always needing logs.</p>
+<h2 id="room-sizes"><a class="header" href="#room-sizes">Room Sizes</a></h2>
+<p>The size of a room is indicated with a multiple of the gridlenght, being 15. The number between brackets indicates the fixed multiplier, in X, Y and Z direction, respectively.</p>
+<p>Stable (3x3x3), standard room near the start, 47 blocks in every direction, and all doors easely reachable.<br />
+Unstable (3xYx3), doors are not easely reachable anymore, and is used as a step between Stable and Chaos).<br />
+Chaos (XxYxZ), doors are not in the center of a face anymore, has varying sizes, and makes the generated rift maze-like.</p>
+<h2 id="room-builds"><a class="header" href="#room-builds">Room Builds</a></h2>
+<p>All edges of the rooms need to be at least 3 blocks thick. This is not a hard rule, but try to have &gt;90% of the walls 3 blocks thick<br />
+Leave spaces for POIs, which will be randomly generated on set positions. A jigsaw block needs to be placed in the center of the POI location.</p>
+<p>Chaos rooms need 1/3 of their doors to remain open, with the jigsaw blocks inside them. Those doors need to be scattered around the room. The other doorways can be covered by processor blocks, but not by bedrock.</p>
+<h2 id="room-naming"><a class="header" href="#room-naming">Room Naming</a></h2>
+<p>The created room has to be saved using the following structure:<br />
+<code>wotr:rift/room/stability/XYZ/roomname</code> ,<br />
+Where Stability is Stable, Unstable or Chaos, XYZ is the size in every direction (1, 2 or 3), and roomname is the name of the room, chosen by the builder.<br />
+Example: <code>wotr:rift/room/stable/333/test_room</code>.</p>
+<h2 id="poi-sizes"><a class="header" href="#poi-sizes">POI sizes</a></h2>
+<p>The POI sizes will be (X, Y, Z):<br />
+(3, 3, 3)*, (5, 5, 5), (7, 6, 7), (9, 8, 9), (11, 9, 11)*.<br />
+This is the outer size of the POI, not counting the floor layer.<br />
+*Up for debate, might very well be removed.</p>
+<h2 id="poi-naming"><a class="header" href="#poi-naming">POI naming</a></h2>
+<p>To be decided</p>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="mod-development-resources"><a class="header" href="#mod-development-resources">Mod Development Resources</a></h1>
+<p><a href="https://docs.neoforged.net/">Neoforged Documentation</a></p>
+<p><a href="https://www.jetbrains.com/idea/download">Intellij Download</a> (scroll down to the free community edition)</p>
+<p><a href="https://www.youtube.com/@ModdingByKaupenjoe">Kaupenjoe's Tutorials</a> (follows along with a lot of the neoforged documentation</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="glossary"><a class="header" href="#glossary">Glossary</a></h1>
 <h2 id="mod-1"><a class="header" href="#mod-1">Mod</a></h2>
 <ul>
-<li><strong>Dimension Delvers</strong>: Current project working name. Not final.</li>
+<li><strong>Dimension Delvers</strong>: Old project name.</li>
+<li><strong>Wanderers of the Rift</strong>: Current project working name.</li>
 <li><strong>Rift</strong>: Current working name for the randomly generated dungeons that the player will enter.</li>
 <li><strong>Rift Key</strong>: Current working name for the item that can open a portal to a rift.</li>
 <li><strong>Theme</strong>: The visuals and general content that is applied to a rift. Utilizes processors.</li>
@@ -421,7 +621,73 @@ Code here
 <li><strong>JigSaw</strong>: The technical vanilla minecraft system that is used to place a structure into the world.</li>
 <li><strong>Processors</strong>: The technical vanilla minecraft system that allows a Structure Piece in a JigSaw to be modified and drastically change its looks.</li>
 <li><strong>Structure Piece</strong>: A single piece of a JigSaw structure, in our case, one room.</li>
+<li><strong>Gridsize (lenght)</strong>: The lenght of a single dimension of the smallest possible room. All other size rooms are multiplications of this (1x, 2x or 3x). The grid value we are working with is: 15.</li>
+<li><strong>roomsize</strong>: The size of the rooms, often noted as XxYxZ, and mostly multiples of the gridsize is used, ie: 3x3x3. Note that the Y value denotes height.</li>
+<li><strong>Standard room</strong>: Rooms made out of processor blocks, that after being processed, makes the rooms the game is played in. Standard come in varying room sizes.</li>
+<li><strong>Processor blocks</strong>:	A few groups of blocks that the processor replaces with themed blocks. Those blocks are used in standard rooms, to be themed with a processor every time they are generated in game.</li>
+<li><strong>Theme</strong>: A set of blocks linked to each used processor block, all with a weight (probability). The processor uses this to determine which block needs to be used to replace every processor block in the standard room.</li>
+<li><strong>Point of Interest (PoI)</strong>:	A small structure that is generated inside the room, containing mob spawners and loot. They can be either: standing isolated on ground, partly inside the wall, in a corner, or hanging from the ceiling. All can have varying sizes.</li>
+<li><strong>Doorway</strong>: A 3x5 hole in the wall, through which a player gets in or out of a room. They are on set locations, often (but not exlusively) 1 on each vertical face, so 4 per room. Rooms are generated from doorway to doorway, with a ring in between.</li>
+<li><strong>Ring</strong>: A 3x5x1 ring of blocks, between 2 doorways. They are used to connect rooms, and to generate the next room.</li>
+<li><strong>Stable room</strong>: A strictly 3x3x3 room, with a door in the middle of each verical face. All 4 doors are easely reachable from one another, without having to dig or travel large parts of the room. Stable rooms are the first rooms in the rift, and they are straightforward and coherent.</li>
+<li><strong>Unstable room</strong>: A 3xYx3 room, with doors in the center only. The doors are not necessarily easily reachable, and a player might require to first travel to a corner, before having access to the door. Mostly used as a room between Stable and Chaos.</li>
+<li><strong>Chaos room</strong>: All other rooms that are not Stable or Unstable. Doors are on set places, but not all door are open, and not every face has exactly 1 door. Those rooms are confusing and complex, and are placed on the outside of the rift.</li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="polls"><a class="header" href="#polls">Polls</a></h1>
+<h2 id="process"><a class="header" href="#process">Process</a></h2>
+<ol>
+<li><em>Anyone</em>: Open a conversation on a topic in either #project-forum or #future-gameplay-ideas.</li>
+<li><em>Anyone</em>: Discuss the topic for at least a week.</li>
+<li><em>Coordinator</em>: Create a new markdown file in the <code>polls</code> directory. See below for necessary contents.</li>
+<li><em>Coordinator</em>: Inform in #pm-coordinator-chat of the existence of the page.</li>
+<li><em>PMs</em>: Set up the poll in the #polls channel at the next Project Meeting.</li>
+<li><em>Anyone</em>: Vote on the poll, you have 1 week to do so.</li>
+</ol>
+<h2 id="poll-format"><a class="header" href="#poll-format">Poll Format</a></h2>
+<pre><code class="language-markdown"># Poll Title
+## Question
+// What is the question you are asking?
+## Discussion Thread
+// Link to the discussion thread on Discord
+## Options
+// What are the options for the poll?
+### Option 1
+// Description of the option
+### Option 2
+// Description of the option
+### Option ...
+// More options
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="should-we-remove-durability-from-the-mod"><a class="header" href="#should-we-remove-durability-from-the-mod">Should we remove durability from the mod?</a></h1>
+<h2 id="question"><a class="header" href="#question">Question</a></h2>
+<p>Should we remove durability from the mod? It is by itself already a heated topic. As WotRift is a mod about upgrading your gear, losing an item to durability can be incredibly frustrating.</p>
+<h2 id="discussion-thread"><a class="header" href="#discussion-thread">Discussion Thread</a></h2>
+<p><a href="https://discord.com/channels/1328761294085554176/1342152467961479262">Durability</a></p>
+<h2 id="options"><a class="header" href="#options">Options</a></h2>
+<h3 id="yes-remove-durability-completely"><a class="header" href="#yes-remove-durability-completely">Yes, remove durability completely</a></h3>
+<p>Durability will cease to exist in the mod. Items will no longer break. Will affect all vanilla and modded items.</p>
+<h3 id="yes-but-only-remove-for-wotrift-items"><a class="header" href="#yes-but-only-remove-for-wotrift-items">Yes, but only remove for WotRift items</a></h3>
+<p>Durability will cease to exist for all items from the WotRift mod. Vanilla items and items from other mods will still have durability.</p>
+<h3 id="no-durability-should-stay"><a class="header" href="#no-durability-should-stay">No, durability should stay</a></h3>
+<p>Durability will remain in the mod. Items will still break.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="should-we-remove-enchanting-from-the-mod"><a class="header" href="#should-we-remove-enchanting-from-the-mod">Should we remove enchanting from the mod?</a></h1>
+<h2 id="question-1"><a class="header" href="#question-1">Question</a></h2>
+<p>Should we remove enchanting from the mod? It is by itself already a heated topic. WotRift will introduce a new modifier system that will make enchanting fairly obsolete.</p>
+<h2 id="discussion-thread-1"><a class="header" href="#discussion-thread-1">Discussion Thread</a></h2>
+<p><a href="https://discord.com/channels/1328761294085554176/1347962994335809546">Enchanting</a></p>
+<h2 id="options-1"><a class="header" href="#options-1">Options</a></h2>
+<h3 id="yes-remove-enchanting-completely"><a class="header" href="#yes-remove-enchanting-completely">Yes, remove Enchanting completely</a></h3>
+<p>The enchanting table will no longer work and no enchantments can be applied to items. Will affect all vanilla and modded items.</p>
+<p>Modded enchants in the pack that are necessary for mod features to work will be reworked into the modifier system.</p>
+<p><em>Design note</em>: Something like this would require an adequate replacement for improving gear. The current Gear Sockets and runegem <em>PoC</em>, applicable to vanilla items too, covers such a need. Other directions with modifiers would require to keep this poll result into account.</p>
+<h3 id="yes-but-only-remove-for-wotrift-items-1"><a class="header" href="#yes-but-only-remove-for-wotrift-items-1">Yes, but only remove for WotRift items</a></h3>
+<p>The enchanting table will not work for items from the WotRift mod. Vanilla items and items from other mods will still be enchantable, but their enchants will be disabled in the rifts.</p>
+<p><em>Technical note</em>: Disabling enchants in the rift is a very complex endeavor and will require a lot of work. This option thus is considered the worst possible option by the dev team.</p>
+<h3 id="no-enchanting-should-stay-but-disabled-in-rifts"><a class="header" href="#no-enchanting-should-stay-but-disabled-in-rifts">No, Enchanting should stay, but disabled in rifts</a></h3>
+<p>Enchanting will remain in the mod. Items can still be enchanted as normal. But most or all of the enchants will be disabled in rifts to prevent balancing issues.</p>
+<p><em>Technical note</em>: See previous point.</p>
+<h3 id="no-enchanting-should-stay-and-be-usable-in-rifts"><a class="header" href="#no-enchanting-should-stay-and-be-usable-in-rifts">No, Enchanting should stay and be usable in rifts</a></h3>
+<p>Enchanting will remain in the mod. Items can still be enchanted as normal. Rifts will be balanced around this, this will make the modifier system less useful and less impactful, especially when overpowered modded enchants are added. Consideration need to be made to make enchanting the main modifier system.</p>
 <div style="break-before: page; page-break-before: always;"></div><object data="../other-files/meeting-notes/2025-02-22-DD-Weekly-Update.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="../other-files/meeting-notes/2025-02-22-DD-Weekly-Update.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="meetings/../other-files/meeting-notes/2025-02-22-DD-Weekly-Update.pdf">Download PDF</a>.</p>
@@ -613,7 +879,7 @@ https://forms.gle/VhzLPqU2oA71C19w8</p>
 <p>Forums for outside discussion</p>
 </li>
 <li>
-<p>Subreddit: https://www.reddit.com/r/DimensionDelvers/</p>
+<p>Subreddit: https://www.reddit.com/r/WanderersoftheRift/</p>
 </li>
 <li>
 <p>Name needed to really settle on the correct subreddit</p>
@@ -650,6 +916,52 @@ https://forms.gle/VhzLPqU2oA71C19w8</p>
 <p>Ideas for reorganization and for naming will be in forum posts kept up for around a week, after that polls to gauge consensus (polls to be up for a week)</p>
 </li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><object data="../other-files/meeting-notes/2025-03-01-Wanderers-Weekly-Update.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="../other-files/meeting-notes/2025-03-01-Wanderers-Weekly-Update.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="meetings/../other-files/meeting-notes/2025-03-01-Wanderers-Weekly-Update.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+<h1 id="notes-2"><a class="header" href="#notes-2">Notes</a></h1>
+<h2 id="-summary-and-decisions--2"><a class="header" href="#-summary-and-decisions--2">== Summary and decisions ==</a></h2>
+<p>Discussion on our values and what sets us apart. (see slide)</p>
+<p>Big shoutout to Wh4l3 for the work they have done this past week.</p>
+<p>Tie breaker poll for name decision ⁠Wold's Vaults⁠Name ideas - List</p>
+<h2 id="-mvp-updates--1"><a class="header" href="#-mvp-updates--1">== MVP Updates ==</a></h2>
+<p>Key forge demo - rift key forge shown with different materials and different rift tiers being able to be created from more “expensive” materials. Materials used determine the theme of the rift. New portal texture and it is very cool.</p>
+<p>Rift update - Portal room has 4 entrances/exits, performance side needs some work, rift level determines rift size, level 20 rift is bigger than the biggest vaults in VH, hallways are being removed.</p>
+<p>Ditto Blocks - Added blocks that can copy the texture of other blocks, which allows us to give blocks different properties. One that was showcased was “Spring Blocks” which would have a trampoline like effect for the player. There is slight differentiation so you can tell the difference, they can be traps or be mined and used as a tool. “Trap Blocks” were also shown which disappear after a short time to drop the player below. There are also variations specifically to trigger on mob vs player.</p>
+<p>Build server - needs more rooms and more POI’s please fill out form in build section for room ideas, feedback on rooms, take note of the structures and the processor blocks that have code currently, if you need a special one make note of it and preferably also code it. There is a room section and a POI section, we need more thoughts/examples for both.</p>
+<h2 id="-future-"><a class="header" href="#-future-">== Future ==</a></h2>
+<p>MVP SoonTM (internally goal is to have something by the end of the month).</p>
+<h2 id="-qa-"><a class="header" href="#-qa-">== Q&amp;A ==</a></h2>
+<p>No questions.</p>
+<h2 id="-next-meeting--2"><a class="header" href="#-next-meeting--2">== Next meeting ==</a></h2>
+<p>Next week,  March 8 2025 Time: 8PM UTC</p>
+<div style="break-before: page; page-break-before: always;"></div><object data="../other-files/meeting-notes/2025-03-01-Wanderers-Weekly-Update.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="../other-files/meeting-notes/2025-03-08-Wanderers-Weekly-Update.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="meetings/../other-files/meeting-notes/2025-03-08-Wanderers-Weekly-Update.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+<h1 id="notes-3"><a class="header" href="#notes-3">Notes</a></h1>
+<h2 id="-kudos-and-recognition-"><a class="header" href="#-kudos-and-recognition-">== Kudos and Recognition ==</a></h2>
+<p>Wh4l3 for new artwork, Patrigan for patrigan, Divides By Zero for work on skill leveling, Robotmonkey for work on abilities branch.</p>
+<h2 id="-summary-and-decisions--3"><a class="header" href="#-summary-and-decisions--3">== Summary and decisions ==</a></h2>
+<p>Tiebreaker poll for name - Wanderers of the Rift won! We will start using the new name.</p>
+<p>New channel called community polls - used for polls to community, 1st poll is durability poll to decide if we are keeping durability.</p>
+<p>Enchanting - do we want Vanilla like enchanting in the game and to what extent. Check out discussion in the forums. Probably going to have poll on enchanting poll next week.</p>
+<h2 id="-mvp-updates--2"><a class="header" href="#-mvp-updates--2">== MVP Updates ==</a></h2>
+<p>We really need rooms! We only have two rooms and one POI.</p>
+<p>Builds are really important so we can have interesting rifts. We are wanting to aim for even more than VH.</p>
+<p>Don't be afraid to throw something down even if you don't consider yourself good at building.</p>
+<p>Decision Process - Discussion in voice or chat -&gt; Idea polishing in Forums -&gt; Polling for options (more than 2) -&gt; Guidelines / Results published on mdBook once decision is taken -&gt; Changes/Actions timelines depending on decisions.</p>
+<p>Also reference guide in mdBook:  https://dimension-delvers.github.io/dimension-delvers-docs/polls/polls.html</p>
+<p>We wont have a playtesting team, everyone is the playtesting team</p>
+<h2 id="-deemos-"><a class="header" href="#-deemos-">== Deemos ==</a></h2>
+<p>Skill gem demo from Divides By Zero - Different gems would be upgradable with different number/tier of options. Skill trees are randomly generated per gem, so two base gems are not necessarily going to end up being the same.</p>
+<p>Ability demo from Patrigan created by RobotMonkey - ability that summons skeletons and then they explode and die when they hit the ground. Cooldown indicator top left. Summoning of skeletons is completely configured using datapacks. We have alot of flexibility and depth that can be done using the current system.  Ball Ball ability which has bouncy balls. Think of making abilities that work well together.</p>
+<h2 id="-next-meeting--3"><a class="header" href="#-next-meeting--3">== Next meeting ==</a></h2>
+<p>Next Week, March 15.
+Due to dailylight savings, check Event in Discord for precise time.</p>
 <div style="break-before: page; page-break-before: always;"></div><ul>
 <li>Coordinators
 <ul>

@@ -1,7 +1,8 @@
 # Glossary
 
 ## Mod
-* **Dimension Delvers**: Current project working name. Not final.
+* **Dimension Delvers**: Old project name.
+* **Wanderers of the Rift**: Current project working name.
 * **Rift**: Current working name for the randomly generated dungeons that the player will enter.
 * **Rift Key**: Current working name for the item that can open a portal to a rift.
 * **Theme**: The visuals and general content that is applied to a rift. Utilizes processors.

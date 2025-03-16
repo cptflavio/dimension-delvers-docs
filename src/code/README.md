@@ -1,5 +1,5 @@
 # Code Home
-Welcome to the Code Home Page. This is where you can find all the code related information for the Dimension Delvers Mod(Pack).
+Welcome to the Code Home Page. This is where you can find all the code related information for the Wanderers of the Rift Mod(Pack).
 
 ## Important Code Pages
 - [Code Decisions](code/decision/decisions.md): The entry point to general code decisions.

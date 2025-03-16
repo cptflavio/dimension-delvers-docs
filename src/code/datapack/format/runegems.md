@@ -2,7 +2,7 @@
 ## Runegem Data
 Runegem Data files are used during the creation of runegems. They are used to define the properties of the runegem and the modifiers it will have when applied to an item.
 #### Location
-`data/dimensiondelvers/dimensiondelvers/runegem_data` Take note of the second dimensionDelvers.
+`data/wotr/wotr/runegem_data` Take note of the second wotr.
 #### Format
 * `shape` : The shape of the runegem. This is a string that represents the shape of the runegem. Taken from the possible shapes.
   * `circle`
@@ -29,7 +29,7 @@ Runegem Data files are used during the creation of runegems. They are used to de
 ```json
 {
     "shape": "circle",
-    "tag": "dimensiondelvers:modifiers/cut_health_rune",
+    "tag": "wotr:modifiers/cut_health_rune",
     "tier": "cut"
 }
 ```
